@@ -5,8 +5,8 @@
   "main": "lib/index.ts",
   "scripts": {
     "devserver": "webpack-dev-server --json --progress",
-    "dumpdev": "webpack --progress --colors -d",
-    "dumpprod": "webpack --progress --colors --config webpack.config.dist.min.js -p"
+    "dumpdev": "rm -rf www/* && webpack --progress --colors -d",
+    "dumpprod": "rm -rf www/* && webpack --progress --colors --config webpack.config.prod.js -p"
   },
   "repository": {
     "type": "git",

@@ -18,7 +18,7 @@ export class HttpModule {
 
     getGoogleHomePage() {
         console.log('[method] getGoogleHomePage called', this.http);
-        this.http.get('data/shprink.json').subscribe((response) => {
+        this.http.get('data/octocat.json').subscribe((response) => {
             this.octocat = response.json();
         });
     }

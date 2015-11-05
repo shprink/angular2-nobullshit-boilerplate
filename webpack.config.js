@@ -25,7 +25,7 @@ module.exports = {
             loader: "json"
         }, {
             test: /\.html$/,
-            loader: 'html'
+            loader: 'raw'
         }, {
             test: /\.scss$/,
             loader: "style!css!autoprefixer?browsers=last 2 versions!sass"

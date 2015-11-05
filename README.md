@@ -12,8 +12,22 @@ Contains:
     * HttpModule (Http call)
     * About (Info about this project)
 
-## Credit
+## Commands
 
-This boilerplate exists thanks to all of the following projects:
+### Web Server
+
+`npm run devserver`
+
+then open `http://localhost:8080/s`
+
+### Dump the dev app
+
+`npm run dumpdev`
+
+### Dump the prod (minified) app
+
+`npm run dumpdev`
+
+## Credit
 
 * https://github.com/AngularClass/angular2-webpack-starter
