@@ -35,7 +35,7 @@ then open `http://localhost:8080/s`
 
 ### Dump the prod (minified) app
 
-`npm run dumpdev`
+`npm run dumpprod`
 
 ## Credit
 
