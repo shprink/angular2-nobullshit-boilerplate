@@ -1,4 +1,4 @@
-Contains:
+## Contains
 
 * Webpack config
 * Sass scaffolding
@@ -10,7 +10,12 @@ Contains:
     * Home (homepage)
     * Navbar (menu)
     * HttpModule (Http call)
-    * About (Info about this project)
+    * About (Info about this project) 
+
+## Preriquisites
+
+* NodeJS (recommended: 4.1.x)
+* NPM (recommended: 3.3.x `sudo npm install -g npm`)
 
 ## Install
 
