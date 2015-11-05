@@ -20,6 +20,7 @@
   "homepage": "https://github.com/shprink/angular2-nobullshit-boilerplate#readme",
   "dependencies": {
     "angular2": "2.0.0-alpha.45",
+    "bootstrap": "github:twbs/bootstrap#v4.0.0-alpha",
     "es6-shim": "^0.33.10",
     "node-sass": "^3.4.1",
     "reflect-metadata": "0.1.2",
