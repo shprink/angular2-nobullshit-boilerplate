@@ -1,0 +1,44 @@
+{
+  "name": "angular2-nobullshit-boilerplate",
+  "version": "0.0.1",
+  "description": "Angular2, TypeScript and Webpack no bullshit!",
+  "main": "lib/index.ts",
+  "scripts": {
+    "devserver": "webpack-dev-server --json --progress",
+    "dumpdev": "webpack --progress --colors -d",
+    "dumpprod": "webpack --progress --colors --config webpack.config.dist.min.js -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shprink/angular2-nobullshit-boilerplate.git"
+  },
+  "author": "shprink <contact@julienrenaux.fr> (http://julienrenaux.fr/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shprink/angular2-nobullshit-boilerplate/issues"
+  },
+  "homepage": "https://github.com/shprink/angular2-nobullshit-boilerplate#readme",
+  "dependencies": {
+    "angular2": "2.0.0-alpha.45",
+    "es6-shim": "^0.33.10",
+    "node-sass": "^3.4.1",
+    "reflect-metadata": "0.1.2",
+    "zone.js": "0.5.8"
+  },
+  "devDependencies": {
+    "autoprefixer-loader": "^3.1.0",
+    "css-loader": "^0.21.0",
+    "html-loader": "^0.3.0",
+    "html-webpack-plugin": "^1.6.1",
+    "json-loader": "^0.5.3",
+    "path": "^0.4.9",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^3.1.1",
+    "style-loader": "^0.13.0",
+    "ts-loader": "^0.6.0",
+    "typescript": "1.6.2",
+    "util": "^0.10.3",
+    "webpack": "~1.10.0",
+    "webpack-dev-server": "~1.10.0"
+  }
+}

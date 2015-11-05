@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>{%=o.htmlWebpackPlugin.options.pkg.title %}</title>
+        <script>
+            window.noBullshitBoilerplate = {};
+            noBullshitBoilerplate.name = "{%= o.htmlWebpackPlugin.options.pkg.name %}";
+            noBullshitBoilerplate.version = "{%= o.htmlWebpackPlugin.options.pkg.version %}";
+        </script>
+    </head>
+
+    <body>
+        <app>
+            Loading...
+        </app>
+        {% for (var chunk in o.htmlWebpackPlugin.files.chunks) { %}
+        <script src="{%=o.htmlWebpackPlugin.files.chunks[chunk].entry %}"></script>
+        {% } %}
+    </body>
+
+</html>
