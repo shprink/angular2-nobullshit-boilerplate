@@ -12,6 +12,10 @@ Contains:
     * HttpModule (Http call)
     * About (Info about this project)
 
+## Install
+
+`npm install`
+
 ## Commands
 
 ### Web Server
