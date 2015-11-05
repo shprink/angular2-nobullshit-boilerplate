@@ -27,7 +27,7 @@
 
 `npm run devserver`
 
-then open `http://localhost:8080/s`
+then open `http://localhost:8080/`
 
 ### Dump the dev app
 
