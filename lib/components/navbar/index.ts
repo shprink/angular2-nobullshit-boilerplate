@@ -1,18 +1,17 @@
-import {Component, View, NgFor} from 'angular2/angular2';
+import {Component, View} from 'angular2/angular2';
+import { RouterLink} from 'angular2/router';
 
 @Component({
   selector: "navbar",
-  directives: [NgFor],
+  directives: [RouterLink],
   styles: [require('!raw!autoprefixer?browsers=last 2 versions!sass!./index.scss')],
   template: require('./index.html')
 })
 export class Navbar {
     title: string;
-    items: Object[];
 
     constructor() {
         this.title = window.noBullshitBoilerplate.name;
-        this.items = require('./items.json');
     }
 
     onInit() {
