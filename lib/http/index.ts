@@ -9,7 +9,7 @@ import '!file?name=data/[name].[ext]!./octocat.json';
     styles: [require('!raw!autoprefixer?browsers=last 2 versions!sass!./index.scss')],
     template: require('./index.html')
 })
-export class HttpModule {
+export class HttpPage {
     octocat: Object;
 
     constructor(public http: Http) {

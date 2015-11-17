@@ -2,7 +2,8 @@ import {Component, View} from 'angular2/angular2';
 import {Navbar} from '../navbar/index';
 import {Home} from '../home/index';
 import {About} from '../about/index';
-import {HttpModule} from '../http/index';
+import {HttpPage} from '../http/index';
+import {DataType} from '../dataType/index';
 import {RouterOutlet, RouteConfig, Route} from 'angular2/router';
 
 @Component({
@@ -16,7 +17,8 @@ import {RouterOutlet, RouteConfig, Route} from 'angular2/router';
 @RouteConfig([
     new Route({ path: '/', component: Home, name: 'Home' }),
     new Route({ path: '/about', component: About, name: 'About' }),
-    new Route({ path: '/http', component: HttpModule, name: 'Http' })
+    new Route({ path: '/http', component: HttpPage, name: 'Http' }),
+    new Route({ path: '/datatype', component: DataType, name: 'DataType' })
 ])
 export class App {
 

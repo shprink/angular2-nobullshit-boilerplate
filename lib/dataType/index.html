@@ -1,0 +1,25 @@
+<ol class="breadcrumb">
+    <li class="active">DataType</li>
+</ol>
+<div class="row">
+    <div class="col-sm-6">
+        <div class="card card-block">
+            <h4 class="card-title">Two way data binding</h4>
+            <input type="text" [(ng-model)]="firstName" />
+            <p class="card-text">Here is my first name: {{firstName}}.</p>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card card-block">
+            <h4 class="card-title">Event based</h4>
+            <input type="text" [value]="lastName" (input)="lastName=$event.target.value" />
+            <p class="card-text">And my last name: {{lastName}}.</p>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card card-block">
+            <h4 class="card-title">Observables (WIP)</h4>
+            <p class="card-text"></p>
+        </div>
+    </div>
+</div>
