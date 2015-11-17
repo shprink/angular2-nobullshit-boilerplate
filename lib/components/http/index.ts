@@ -10,7 +10,7 @@ import '!file?name=data/[name].[ext]!./octocat.json';
     template: require('./index.html')
 })
 export class HttpModule {
-    octocat: Object[];
+    octocat: Object;
 
     constructor(public http: Http) {
 

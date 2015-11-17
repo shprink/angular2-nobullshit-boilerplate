@@ -14,9 +14,9 @@ import {RouterOutlet, RouteConfig, Route} from 'angular2/router';
     template: require('./index.html')
 })
 @RouteConfig([
-    new Route({ path: '/', component: Home, as: 'Home' }),
-    new Route({path: '/about', component: About, as: 'About'}),
-    new Route({path: '/http', component: HttpModule, as: 'Http'})
+    new Route({ path: '/', component: Home, name: 'Home' }),
+    new Route({ path: '/about', component: About, name: 'About' }),
+    new Route({ path: '/http', component: HttpModule, name: 'Http' })
 ])
 export class App {
 
