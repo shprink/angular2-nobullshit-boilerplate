@@ -16,7 +16,7 @@ import {RouterOutlet, RouteConfig, Route} from 'angular2/router';
 })
 @RouteConfig([
     new Route({ path: '/', component: Home, name: 'Home' }),
-    new Route({ path: '/about', component: About, name: 'About' }),
+    new Route({ path: '/about', component: About, name: 'About', data: {pageId: null}}),
     new Route({ path: '/http', component: HttpPage, name: 'Http' }),
     new Route({ path: '/datatype', component: DataType, name: 'DataType' })
 ])

@@ -1,22 +1,22 @@
 <ol class="breadcrumb">
     <li class="active">DataType</li>
 </ol>
+<button class="btn btn-primary" (click)="triggerModelChange()">Trigger a model change</button>
 <div class="row">
-    <div class="col-sm-6">
+    <div class="col-sm-12">
         <div class="card card-block">
             <h4 class="card-title">Two way data binding</h4>
+            <pre><code>[(ng-model)]="firstName"</code></pre>
             <input type="text" [(ng-model)]="firstName" />
+
+            <hr/>
+            Same as:<pre><code>[value]="firstName" (input)="firstName=$event.target.value"</code></pre>
+            <input type="text" [value]="firstName" (input)="firstName=$event.target.value" />
+            <hr/>
             <p class="card-text">Here is my first name: {{firstName}}.</p>
         </div>
     </div>
-    <div class="col-sm-6">
-        <div class="card card-block">
-            <h4 class="card-title">Event based</h4>
-            <input type="text" [value]="lastName" (input)="lastName=$event.target.value" />
-            <p class="card-text">And my last name: {{lastName}}.</p>
-        </div>
-    </div>
-    <div class="col-sm-6">
+    <div class="col-sm-12">
         <div class="card card-block">
             <h4 class="card-title">Observables (WIP)</h4>
             <p class="card-text"></p>
