@@ -1,17 +1,17 @@
 <nav class="navbar navbar-dark bg-inverse">
-    <a class="navbar-brand" [router-link]="['./Home']">{{ title }}</a>
+    <a class="navbar-brand" [routerLink]="['./Home']">{{ title }}</a>
     <ul class="nav navbar-nav">
         <li class="nav-item">
-            <a class="nav-link" [router-link]="['./Home']">Home</a>
+            <a class="nav-link" [routerLink]="['./Home']">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" [router-link]="['./Http']">Http requests</a>
+            <a class="nav-link" [routerLink]="['./Http']">Http requests</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" [router-link]="['./About', {pageId: 2}]">About</a>
+            <a class="nav-link" [routerLink]="['./About', {pageId: 2}]">About</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" [router-link]="['./DataType']">DataType</a>
+            <a class="nav-link" [routerLink]="['./DataType']">DataType</a>
         </li>
     </ul>
 </nav>

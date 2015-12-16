@@ -3,7 +3,7 @@
 </ol>
 <button class="btn" (click)="getGoogleHomePage()">Get Octocat's GitHub Profile</button>
 <hr/>
-<div class="card text-center" *ng-if="octocat">
+<div class="card text-center" *ngIf="octocat">
     <img class="img-circle" src="{{octocat.avatar_url}}" width="100">
     <div class="card-block">
         <h4 class="card-title">{{octocat.name}} ({{octocat.login}})</h4>

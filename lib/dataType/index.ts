@@ -1,9 +1,8 @@
-import {Component, View, NgFor, FORM_DIRECTIVES} from 'angular2/angular2';
+import {Component, View} from 'angular2/core';
 import DataTypeService from './service';
 
 @Component({
     selector: "home",
-    directives: [FORM_DIRECTIVES],
     providers: [DataTypeService],
     styles: [require('!raw!autoprefixer?browsers=last 2 versions!sass!./index.scss')],
     template: require('./index.html')

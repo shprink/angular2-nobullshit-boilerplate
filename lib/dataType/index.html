@@ -7,7 +7,7 @@
         <div class="card card-block">
             <h4 class="card-title">Two way data binding</h4>
             <pre><code>[(ng-model)]="firstName"</code></pre>
-            <input type="text" [(ng-model)]="firstName" />
+            <input type="text" [(ngModel)]="firstName" />
 
             <hr/>
             Same as:<pre><code>[value]="firstName" (input)="firstName=$event.target.value"</code></pre>
