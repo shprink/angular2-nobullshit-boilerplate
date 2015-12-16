@@ -1,4 +1,5 @@
-import {Component, View, NgFor, FORM_DIRECTIVES} from 'angular2/angular2';
+import {Component, View} from 'angular2/core';
+import {NgFor, FORM_DIRECTIVES} from 'angular2/common';
 import DataTypeService from './service';
 
 @Component({

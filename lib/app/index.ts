@@ -1,4 +1,4 @@
-import {Component, View} from 'angular2/angular2';
+import {Component, View} from 'angular2/core';
 import {Navbar} from '../navbar/index';
 import {Home} from '../home/index';
 import {About} from '../about/index';

@@ -1,4 +1,5 @@
-import {Component, View, NgFor} from 'angular2/angular2';
+import {Component, View} from 'angular2/core';
+import {NgFor} from 'angular2/common';
 
 @Component({
     selector: "home",
