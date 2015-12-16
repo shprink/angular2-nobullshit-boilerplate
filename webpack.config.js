@@ -7,6 +7,7 @@ var path = require('path'),
 module.exports = {
     entry: {
         'app': path.join(libPath, 'index.ts'),
+        'vendors': path.join(libPath, 'vendors.ts'),
         'style': path.join(libPath, 'index.scss')
     },
     output: {
