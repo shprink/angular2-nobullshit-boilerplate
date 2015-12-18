@@ -22,7 +22,7 @@ export class HttpPage {
         });
     }
 
-    onInit() {
+    ngOnInit() {
         console.log('[Component] http running');
     }
 }

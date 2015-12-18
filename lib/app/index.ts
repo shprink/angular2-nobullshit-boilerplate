@@ -26,7 +26,7 @@ export class App {
 
     }
 
-    onInit() {
+    ngOnInit() {
         console.log('[Component] app running');
     }
 }

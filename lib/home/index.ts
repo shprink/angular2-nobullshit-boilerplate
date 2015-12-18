@@ -10,35 +10,35 @@ export class Home {
     constructor() {
     }
 
-    onInit() {
-        console.log('[Component] home onInit');
+    ngOnInit() {
+        console.log('[Component] home ngOnInit');
     }
 
-    onDestroy() {
+    ngOnDestroy() {
         console.log('[Component] home onDestroy');
     }
 
-    onChanges() {
+    ngOnChanges() {
         console.log('[Component] home onChanges');
     }
 
-    doCheck() {
+    ngDoCheck() {
         console.log('[Component] home doCheck');
     }
 
-    afterContentInit() {
+    ngAfterContentInit() {
         console.log('[Component] home afterContentInit');
     }
 
-    afterContentChecked() {
+    ngAfterContentChecked() {
         console.log('[Component] home afterContentChecked');
     }
 
-    afterViewInit() {
+    ngAfterViewInit() {
         console.log('[Component] home afterViewInit');
     }
 
-    afterViewChecked() {
+    ngAfterViewChecked() {
         console.log('[Component] home afterViewChecked');
     }
 }
