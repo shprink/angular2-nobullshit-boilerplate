@@ -1,0 +1,5 @@
+<div class="list-group">
+    <a [routerLink]="['GithubUsersItem', {login: user.login}]" *ngFor='#user of users' class="list-group-item">
+        <h4 class="list-group-item-heading">{{user.login}}</h4>
+    </a>
+</div>

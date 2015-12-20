@@ -30,7 +30,8 @@ module.exports = {
         }, {
             test: /\.scss$/,
             loader: "style!css!autoprefixer?browsers=last 2 versions!sass"
-        }]
+        }],
+        noParse: [/angular2\/bundles\/.+/],
     },
     resolve: {
         extensions: ['', '.ts', '.js', '.html', '.scss']

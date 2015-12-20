@@ -1,0 +1,12 @@
+<nav>
+  <ul class="pager">
+    <li class="pager-prev"><a [routerLink]="['GithubUsersList']">Back</a></li>
+  </ul>
+</nav>
+<div class="card">
+  <div class="card-block">
+    <h4 class="card-title">{{user?.name}}</h4>
+    <p class="card-text">{{user?.location}}</p>
+    <a [href]="user?.html_url" target="_blank" class="btn btn-primary">Go to profile</a>
+  </div>
+</div>

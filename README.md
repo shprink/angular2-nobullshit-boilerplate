@@ -5,12 +5,14 @@
 * Routing capability
 * Http request demonstration
 * Bootstrap 4 Import
+* RouterChild (GithubUser component)
 * Components
     * App (app scaffolding)
     * Home (homepage)
     * Navbar (menu)
+    * GithubUser (list/item demonstration)
     * HttpModule (Http call)
-    * About (Info about this project) 
+    * About (Info about this project)
 
 ## Preriquisites
 
