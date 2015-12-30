@@ -12,6 +12,7 @@
     * Navbar (menu)
     * GithubUser (list/item demonstration)
     * HttpModule (Http call)
+    * Google Map
     * About (Info about this project)
 
 ## Preriquisites
