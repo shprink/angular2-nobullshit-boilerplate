@@ -7,12 +7,14 @@ import {ROUTER_PROVIDERS, LocationStrategy, HashLocationStrategy, APP_BASE_HREF}
 import {HTTP_PROVIDERS} from 'angular2/http';
 import {App} from './components/index';
 import {Http} from 'angular2/http';
+import {ANGULAR2_GOOGLE_MAPS_PROVIDERS} from 'angular2-google-maps/core';
 
 
 bootstrap(App, [
     FORM_PROVIDERS,
     HTTP_PROVIDERS,
     ROUTER_PROVIDERS,
+    ANGULAR2_GOOGLE_MAPS_PROVIDERS,
     // PathLocationStrategy being the default, we only need to define APP_BASE_HREF
     // provide(APP_BASE_HREF, {useValue: '/'})
     // Here we want to use the # strategy instead:
