@@ -9,7 +9,7 @@ import {bootstrap} from 'angular2/platform/browser';
 import {FORM_PROVIDERS} from 'angular2/common';
 import {ROUTER_PROVIDERS, LocationStrategy, HashLocationStrategy, APP_BASE_HREF} from 'angular2/router';
 import {HTTP_PROVIDERS} from 'angular2/http';
-import {App} from './app/index';
+import {App} from './components/index';
 import {Http} from 'angular2/http';
 
 bootstrap(App, [
