@@ -15,14 +15,14 @@ export class HttpPage {
 
     }
 
-    getGoogleHomePage() {
-        console.log('[method] getGoogleHomePage called', this.http);
+    getOctocatProfile() {
+        console.log('[method] getOctocatProfile called', this.http);
         this.http.get('data/octocat.json').subscribe((response) => {
             this.octocat = response.json();
         });
     }
 
-    onInit() {
+    ngOnInit() {
         console.log('[Component] http running');
     }
 }

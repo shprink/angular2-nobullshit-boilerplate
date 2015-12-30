@@ -11,7 +11,7 @@ export class About {
     constructor() {
     }
 
-    onInit() {
+    ngOnInit() {
         console.log('[Component] home running');
     }
 }

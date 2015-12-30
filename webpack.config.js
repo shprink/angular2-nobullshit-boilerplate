@@ -7,6 +7,7 @@ var path = require('path'),
 module.exports = {
     entry: {
         'app': path.join(libPath, 'index.ts'),
+        'vendors': path.join(libPath, 'vendors.ts'),
         'style': path.join(libPath, 'index.scss')
     },
     output: {
@@ -29,7 +30,8 @@ module.exports = {
         }, {
             test: /\.scss$/,
             loader: "style!css!autoprefixer?browsers=last 2 versions!sass"
-        }]
+        }],
+        noParse: [/angular2\/bundles\/.+/],
     },
     resolve: {
         extensions: ['', '.ts', '.js', '.html', '.scss']

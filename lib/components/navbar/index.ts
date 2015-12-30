@@ -14,7 +14,7 @@ export class Navbar {
         this.title = window.noBullshitBoilerplate.name;
     }
 
-    onInit() {
+    ngOnInit() {
         console.log('[Component] navbar running');
     }
 }

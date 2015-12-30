@@ -16,7 +16,7 @@ export class DataType {
         this.firstName = "Julien";
     }
 
-    onInit() {
+    ngOnInit() {
         console.log('[Component] datatype running');
     }
 
