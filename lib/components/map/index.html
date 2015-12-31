@@ -4,19 +4,21 @@
 
 <div class="jumbotron">
     <h4> Quick example with <a href="http://sebastianm.github.io/angular2-google-maps/">angular2-google-maps</a> plugin </h4>
+    <h5> You can add markers by clicking to the map </h5>
 </div>
 
 <sebm-google-map
-     [latitude]="lat"
-     [longitude]="lng"
-     [zoom]="zoom"
-     (mapClick)="onClickMap($event)">
+    [latitude]="lat"
+    [longitude]="lng"
+    [zoom]="zoom"
+    (mapClick)="onClickMap($event)">
 
-     <sebm-google-map-marker
-       *ngFor="#m of markers"
-       (markerClick)="onClickMarker(m.label)"
-       [latitude]="m.lat"
-       [longitude]="m.lng"
-       [label]="m.label"></sebm-google-map-marker>
+    <sebm-google-map-marker
+        *ngFor="#m of markers"
+        (markerClick)="onClickMarker(m.label)"
+        [latitude]="m.lat"
+        [longitude]="m.lng"
+        [label]="m.label">
+    </sebm-google-map-marker>
 
-   </sebm-google-map>
+</sebm-google-map>
