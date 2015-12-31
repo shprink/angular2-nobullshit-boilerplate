@@ -17,8 +17,8 @@ export class Map {
 
     zoom: number = 5;
 
-    lat: number = 46.5286;
-    lng: number = -10.43896;
+    lat: number = 47;
+    lng: number = 2;
 
     markers = [{
         lat : 48.8589,

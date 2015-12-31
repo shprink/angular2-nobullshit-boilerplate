@@ -15,7 +15,8 @@ export class List {
     }
 
     ngOnInit() {
-        this.http.get('https://api.github.com/search/users?q=location:mexico,mexico&sort=followers&order=desc').subscribe((response) => {
+        this.http.get('https://api.github.com/search/users?q=location:mexico,mexico&sort=followers&order=desc')
+        .subscribe((response) => {
             this.users = response.json().items;
         });
     }
