@@ -1,11 +1,13 @@
 import {Component, View}    from 'angular2/core';
-import {SebmGoogleMap,
+import {ANGULAR2_GOOGLE_MAPS_PROVIDERS,
+    SebmGoogleMap,
     MapMouseEvent,
     ANGULAR2_GOOGLE_MAPS_DIRECTIVES}      from 'angular2-google-maps/core';
 
 @Component({
     selector: "map",
     directives: [ANGULAR2_GOOGLE_MAPS_DIRECTIVES],
+    providers: [ANGULAR2_GOOGLE_MAPS_PROVIDERS],
     styles: [require('!raw!autoprefixer?browsers=last 2 versions!sass!./index.scss')],
     template: require('./index.html')
 })
